@@ -8,7 +8,6 @@ def solution(number, limit, power):
                     count += 1
                 else:
                     count += 2
-            print(count)
             if count > limit:
                 count = power
                 break
