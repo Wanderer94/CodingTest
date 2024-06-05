@@ -1,17 +1,16 @@
 def solution(number, limit, power):
-    answer = 0
-    arr = [i+1 for i in range(number)]
-    for i in arr:
-        count = 1
-        for j in range(1,i):
+    answer = 1
+    for i in range(2, number+1 ):
+        count = 0
+        for j in range(1 , int(i**(1/2))+1): #제곱근 활용!
             if i % j == 0:
-                count += 1
+                if j == i//j:
+                    count += 1
+                else:
+                    count += 2
+            print(count)
             if count > limit:
+                count = power
                 break
-        if count > limit:
-            arr[arr.index(i)] = power
-        else:
-            arr[arr.index(i)] = count
-            
-    answer = sum(arr)
+        answer += count
     return answer
