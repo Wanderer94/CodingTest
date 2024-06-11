@@ -9,3 +9,4 @@ def solution(data, ext, val_ext, sort_by):
     # sort_by에 해당하는 값을 기준으로 오름차순 정렬
     answer.sort(key=lambda x:x[sort_i])
     return answer
+
