@@ -9,3 +9,5 @@ def solution(A,B):
 
     return answer
 ```
+
+- 따라서 수학적으로 접근 해 보려고 한다.
