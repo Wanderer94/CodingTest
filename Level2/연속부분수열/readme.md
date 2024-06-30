@@ -18,3 +18,18 @@ def solution(elements):
 - 아후 for loop를 두번돌려 첫번째는 몇개의 원소를 더할 것인지, 두번째는 더하기 시작할 인덱스를 구하는 것으로 정의내렸다.
 - set()을 사용해서 중복된 수를 제거하고 answer에 저장하였다.
 - 이렇게 하면 효과적으로 문제를 해결 할 수 있었다.
+- 속도에 있어 아쉬움이 들어 다음과 같이 개선해보았다.
+
+```py
+def solution(elements):
+    ll = len(elements)
+    res = set()
+
+    for i in range(ll):
+        ssum = elements[i]
+        res.add(ssum)
+        for j in range(i+1, i+ll):
+            ssum += elements[j%ll]
+            res.add(ssum)
+    return len(res)
+```
