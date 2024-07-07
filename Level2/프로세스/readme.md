@@ -29,6 +29,9 @@ function solution(priorities, location) {
   return answer;
 }
 ```
+- 프로세스의 동작 방식에 대해서 생각해보면 쉬운 문제였다.
+- 핵심은 우선순위가 가장 높은지에 대해서만 작성해보면 된다.
+- 수도코드로 먼저 작성해보면 쉬웠을 문제
 
 ```js
 function solution(priorities, location) {
