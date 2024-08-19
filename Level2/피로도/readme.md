@@ -27,5 +27,4 @@ def solution(k, dungeons):
     visited = [False] * len(dungeons)
     dfs(k, 0, dungeons, visited)
     return answer
-출처: https://alreadyusedadress.tistory.com/294 [ :티스토리]
 ```
