@@ -1,19 +1,6 @@
 function solution(m, musicinfos) {
   var answer = "";
-  const melodys = [
-    "C",
-    "C#",
-    "D",
-    "D#",
-    "E",
-    "F",
-    "F#",
-    "G",
-    "G#",
-    "A",
-    "A#",
-    "B",
-  ];
+
   let melodyMap = {};
   // 슈도로 짜더라도 순서대로 작성할 것
   // 1. 파싱 및 계산
@@ -52,5 +39,7 @@ function solution(m, musicinfos) {
       }
     }
   });
+  parsedMusicinfos();
+  answer = answer ? answer[0] : "(None)";
   return answer;
 }
