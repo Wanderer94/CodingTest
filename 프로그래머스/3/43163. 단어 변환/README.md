@@ -73,5 +73,7 @@ target인 "cog"는 words 안에 없기 때문에 변환할 수 없습니다.</p>
 
 - 핵심 아이디어는 words를 node라고 생각하는것.
 - dfs/bfs의 구동 방식에 대해서 익히고 있는지가 핵심이다.
-
-> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+- 각각의 장단점에 대해서 고민을 한번 해보자!
+- dfs는 직관적으로 구현가능하지만 메모리비용을 예측하기 어렵고 최단경로를 알 수 없다.
+- bfs는 비교적효율적이고 최단경로를 알 수 있다. 구현이 까다롭고 큐에 메모리가 준비되어있어야 한다.
+  > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
