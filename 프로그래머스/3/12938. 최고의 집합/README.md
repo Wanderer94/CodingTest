@@ -1,6 +1,6 @@
-# [level 3] 최고의 집합 - 12938 
+# [level 3] 최고의 집합 - 12938
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12938) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12938)
 
 ### 성능 요약
 
@@ -84,5 +84,9 @@
 
 <p>그중 각 원소의 곱이 최대인 { 4, 4 }가 최고의 집합입니다.</p>
 
+## 문제 해설
+
+- 어떤 알고리즘을 사용할 지에 대해서 고민하기 보다 문제에 대해서 좀 더 큰 관점에서 바라볼 필요가 있습니다.
+- 수학적으로 바라볼때 곱의 최대를 위해서는 나눠진 수들의 편차가 최대한 작아야함을 알 수 있습니다.
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
